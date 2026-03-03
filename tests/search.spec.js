@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('find locators', async ({ page }) => {
   test.slow();
-  await page.goto('https://playwright.dev/');
+  await page.goto('/');
 
   // 1. Open search modal
   await page.getByRole('button', { name: 'Search' }).click();
